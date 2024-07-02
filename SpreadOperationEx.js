@@ -54,3 +54,9 @@ console.log(testObjectSpread);
 testObjectSpread = { ...testObject, skey: 243 };
 
 console.log(testObjectSpread);
+
+//combination of array and object
+
+var combinationObj = { ...testObject, ...spreadOpArrayOne };
+
+console.log(combinationObj);
