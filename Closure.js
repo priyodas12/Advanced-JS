@@ -23,6 +23,7 @@ const outer3 = () => {
 };
 
 const test = outer3();
+//here test function will be having scope for incrementalValue
 
 for (let index = 0; index < 10; index++) {
 	test();
