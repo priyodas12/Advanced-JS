@@ -45,7 +45,8 @@ testObjectSpread = { ...testObject, ...{ tkey: 192 } };
 
 console.log(testObjectSpread);
 
-testObjectSpread = { ...testObject, lkey: 243 };
+// @ts-ignore
+testObjectSpread = { ...testObject, testKey: 243 };
 
 console.log(testObjectSpread);
 
