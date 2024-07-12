@@ -11,5 +11,9 @@ y(function thisIsCallbackFunction() {
 y();
 
 setTimeout(function callMeAfterSomeTime() {
-	console.log('finally I was called to execute!');
+	console.log('\ncallMeAfterSomeTime::finally I was called to execute!');
 }, 5000);
+
+setInterval(() => {
+	console.log('\ncalling in interval!');
+}, 3000);
