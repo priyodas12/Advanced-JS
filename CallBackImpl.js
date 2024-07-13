@@ -11,7 +11,7 @@ y(function thisIsCallbackFunction() {
 y();
 
 setTimeout(function callMeAfterSomeTime() {
-	console.log('\ncallMeAfterSomeTime::finally I was called to execute!');
+	console.log('\ncallMeAfterSomeTime::finally I was called to execute!'); //after 5000 millisec this function will be visible into callstack.this operation blocks the call stack.(blocking the main thread.)
 }, 5000);
 
 setInterval(() => {
