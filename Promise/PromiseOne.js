@@ -29,7 +29,7 @@ new Promise((resolve, reject) => {
 
 new Promise((resolve, reject) => {
 	setTimeout(() => {
-		fetch('https://jsonplaceholder.org/users/1')
+		fetch('https://jsonplaceholder.org/users/20')
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error('Network response was not ok');
@@ -46,11 +46,14 @@ new Promise((resolve, reject) => {
 				);
 				reject(error);
 			});
-	}, 3000);
+	}, 6000);
 })
 	.then((data) => {
 		console.log('Users::', data);
 	})
 	.catch((error) => {
 		console.log('Error:', error);
+	})
+	.finally((data) => {
+		console.log('promise is resolved or rejected', data);
 	});
