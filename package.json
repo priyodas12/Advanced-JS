@@ -11,6 +11,7 @@
 		"build": "webpack"
 	},
 	"dependencies": {
+		"advanced-js": "file:",
 		"deep-equal": "^2.2.3"
 	},
 	"name": "advanced-js",
